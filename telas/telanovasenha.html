@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles-marcela.css">
+    <title>Salão Senac Recife</title>
+</head>
+<body class="fundo-login">
+    <nav class="menu-navegacao">
+        <img src="../imgs/salaosenac.png" alt="Logo do Salão Senac" class="logo">
+        <ul class="menu-itens">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="login.html">Agende seu horário</a></li>
+        </ul>
+    </nav>    
+    <div class="container-login">
+        <h3>Redefina sua senha</h3>
+        <p>Por favor, insira o código de recuperação enviado ao seu e-mail e crie uma nova senha.</p>
+        <form action="#" method="POST" class="form-login">
+            <label for="codigo-recuperacao">Código de Recuperação:</label>
+            <input type="text" id="codigo-recuperacao" name="codigo-recuperacao" required placeholder="Digite o código de recuperação">
+            
+            <label for="nova-senha">Nova senha:</label>
+            <input type="password" id="nova-senha" name="nova-senha" required placeholder="Digite sua nova senha">
+            
+            <label for="repetir-senha">Repita sua senha:</label>
+            <input type="password" id="repetir-senha" name="repetir-senha" required placeholder="Repita sua nova senha">
+
+            <a href="login.html">
+                <button type="submit" class="btn-criar-conta">Redefinir senha</button>
+        </form>        
+    </div>
+</body>
+</html>

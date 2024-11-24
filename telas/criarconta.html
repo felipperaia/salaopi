@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles-marcela.css">
+    <title>Salão Senac Recife</title>
+</head>
+<body class="fundo-login">
+    <nav class="menu-navegacao">
+        <img src="../imgs/salaosenac.png" alt="Logo do Salão Senac" class="logo">
+        <ul class="menu-itens">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="login.html">Agende seu horário</a></li>
+        </ul>
+    </nav>    
+    <div class="container-login">
+        <h3>Crie sua conta</h3>
+        <form action="#" method="POST" class="form-login">
+            <label for="full-name">Nome Completo</label>
+            <input type="text" id="full-name" name="full-name" placeholder="Seu nome completo" required>
+
+            <label for="phone">Celular</label>
+            <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+        
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+
+            <label for="confirm-password">Confirmar Senha</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha" required>
+            
+            <a href="login.html">
+                <button type="button" class="btn-criar-conta">Criar Conta</button>
+        </form>        
+    </div>
+</body>
+</html>

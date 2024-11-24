@@ -1,0 +1,76 @@
+/* Estilo do menu lateral */
+#sidebar {
+    width: 250px;
+    background-color: #00000081; /* Rosa padrão */
+    height: 100vh;
+    color: white;
+}
+
+#sidebar .nav-link {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+#sidebar .nav-link.active {
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .form-inline input {
+    width: 200px;
+}
+
+/* Estilo da foto de perfil no canto superior direito */
+.perfil-navbar {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-left: 15px;
+    border: 2px solid #1413147a;
+}
+
+/* Cor dos botões na Navbar */
+.navbar .btn-outline-dark {
+    background-color: #F79633; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+.navbar .btn-outline-secondary {
+    background-color: #022e8f; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+.navbar .btn-pink {
+    background-color: #F79633; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+/* Cor dos botões no formulário */
+.form-control {
+    border-color: #011f5f; /* Cor da borda dos campos de input */
+}
+
+.btn-dark {
+    background-color: #F79633; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+.btn-secondary {
+    background-color: #6c757d; /* Cor de fundo */
+    color: white; /* Cor do texto */
+}
+
+/* Adicionar margem à direita nos botões da navbar */
+.navbar .btn-outline-secondary {
+    margin-right: 10px; /* Ajuste a margem conforme necessário */
+}
+
+/* Adicionar margem à esquerda na barra de pesquisa */
+.navbar .form-inline {
+    margin-left: 20px; /* Ajuste a margem conforme necessário */
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles-marcela.css">
+    <script src="../javascript/script.js"></script>
+    <title>Salão Senac Recife</title>
+</head>
+<body class="fundo-servicos">
+    <nav class="menu-navegacao">
+        <img src="../imgs/salaosenac.png" alt="Logo do Salão Senac" class="logo">
+        <ul class="menu-itens">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="login.html">Agende seu horário</a></li>
+        </ul>
+    </nav>   
+    <div class="container-servicos">
+        <h1>Nossos Serviços</h1>
+        <p>Priorize-se e cuide do seu bem-estar! Agende um horário com nossa equipe e permita-se realçar sua beleza e autoestima.</p>
+        <div class="imagens-servicos">
+            <div class="servico-item">
+                <button class="btn-servico" onclick="toggleDescricao(this)">Serviços de Cabelo</button>
+                <div class="imagem-container">
+                    <img src="../imgs/cabelo.jpg" alt="Serviço de Cabelo">
+                </div>
+                <div class="descricao-servico">
+                    <h3>Serviços de Cabelo</h3>
+                    <ul>
+                        <li>Corte</li>
+                        <li>Escova</li>
+                        <li>Coloração</li>
+                        <li>Hidratação</li>
+                        <li>Tratamento</li>
+                        <li>Progressiva</li>
+                        <li>Botox</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="servico-item">
+                <button class="btn-servico" onclick="toggleDescricao(this)">Manicure / Pedicure / Podologia</button>
+                <div class="imagem-container">
+                    <img src="../imgs/unha.jpg" alt="Serviço de Unhas e Podologia">
+                </div>
+                <div class="descricao-servico">
+                    <h3>Serviços Mãos e Pés</h3>
+                    <ul>
+                        <li>Unhas de Gel</li>
+                        <li>Manicure Completa</li>
+                        <li>Pedicure Completa</li>
+                        <li>Tratamento Podológico</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="servico-item">
+                <button class="btn-servico" onclick="toggleDescricao(this)">Sobrancelhas / Maquiagem</button>
+                <div class="imagem-container">
+                    <img src="../imgs/sobrancelha.png" alt="Serviço de Sobrancelhas / Maquiagem">
+                </div>
+                <div class="descricao-servico">
+                    <h3>Serviços faciais</h3>
+                    <ul>
+                        <li>Design de Sobrancelhas</li>
+                        <li>Maquiagem Social</li>
+                        <li>Maquiagem para Noivas</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="servico-item">
+                <button class="btn-servico" onclick="toggleDescricao(this)">Depilação</button>
+                <div class="imagem-container">
+                    <img src="../imgs/depilacao.jpg" alt="Serviço de Depilação">
+                </div>
+                <div class="descricao-servico">
+                    <h3>Tipos de Depilação</h3>
+                    <ul>
+                        <li>Depilação Corporal</li>
+                        <li>Depilação Facial</li>
+                        <li>Depilação a Laser</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="servico-item">
+                <button class="btn-servico" onclick="toggleDescricao(this)">Massagem</button>
+                <div class="imagem-container">
+                    <img src="../imgs/massagem.jpg" alt="Serviço de Massagem">
+                </div>
+                <div class="descricao-servico">
+                    <h3>Tipos de Massagem</h3>
+                    <ul>
+                        <li>Massagem Relaxante</li>
+                        <li>Massagem Terapêutica</li>
+                        <li>Massagem Modeladora</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="servico-item">
+                <button class="btn-servico" onclick="toggleDescricao(this)">Serviços de Barbearia</button>
+                <div class="imagem-container">
+                    <img src="../imgs/barbeiro.jpg" alt="Serviço de Barbearia">
+                </div>
+                <div class="descricao-servico">
+                    <h3>Serviços de Barbearia</h3>
+                    <ul>
+                        <li>Corte de Cabelo</li>
+                        <li>Barba Feita</li>
+                        <li>Tratamento</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

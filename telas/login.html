@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles-marcela.css">
+    <title>Salão Senac Recife</title>
+</head>
+<body class="fundo-login">
+    <nav class="menu-navegacao">
+        <img src="../imgs/salaosenac.png" alt="Logo do Salão Senac" class="logo">
+        <ul class="menu-itens">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
+            <li><a href="login.html">Agende seu horário</a></li>
+        </ul>
+    </nav>    
+    <div class="container-login">
+        <h3>Acesse sua conta</h3>
+        <form id="login-form" method="POST" class="form-login">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+        
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required placeholder="Digite sua senha">
+
+            <a href="envioemail.html" class="btn-redefinir-senha">Clique aqui para redefinir sua senha.</a>
+        
+            <button type="submit">Entrar</button>
+            
+            <a href="criarconta.html">
+                <button type="button" class="btn-criar-conta">Criar Conta</button>
+            </a>            
+        </form>        
+    </div>
+
+    <script>
+        //script de envio do formulário de login para a API, só consegui pensar nessa forma de atualizar o código de Laura, talvez não seja o melhor...
+        document.getElementById("login-form").addEventListener("submit", async (e) => {
+            e.preventDefault(); //impedir o envio tradicional do formulário, creio que talvez fosse interessante gerar por outro canto, mas desculpem-me, preguiça de pensar.
+
+            const email = document.getElementById("email").value;
+            const senha = document.getElementById("senha").value;
+
+            //envia os dados para a API do back-end
+            const response = await fetch("/api/user/login", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ email, senha })
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                localStorage.setItem("token", data.token);  //Armazenar o token JWT no LocalStorage
+                window.location.href = "/profile.html";  //redireciona para a página de perfil, possívelmente será alterado, creio que será para agendamento ou sobre,
+                //ainda não vi a lógica usada no figma
+            } else {
+                alert("Erro ao fazer login.");
+            }
+        });
+    </script>
+</body>
+</html>
