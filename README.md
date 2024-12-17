@@ -19,7 +19,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
     <img align="center" height="30" width="40" alt="TypeScript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg">
     <img align="center" height="30" width="40" alt="Node.js" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg">
     <img align="center" height="30" width="40" alt="Express" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg">
-    <img align="center" height="30" width="40" alt="TypeORM" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg">
+    <img align="center" height="30" width="40" alt="MySQL" src="https://seeklogo.com/images/T/typeorm-logo-F243B34DEE-seeklogo.com.png">
     <img align="center" height="30" width="40" alt="MySQL" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
 </p>
 
